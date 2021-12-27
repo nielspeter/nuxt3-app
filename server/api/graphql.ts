@@ -1,0 +1,1 @@
+export default (_req, _res) => 'Hello World'
