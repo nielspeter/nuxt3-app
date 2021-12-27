@@ -1,11 +1,13 @@
 {
-    "functions": { "source": ".output/server" },
-    "hosting": [
-      {
-        "site": "firebase-auth-demo",
-        "public": ".output/public",
-        "cleanUrls": true,
-        "rewrites": [{ "source": "**", "function": "server" }]
-      }
+  "functions": {
+    "source": ".output/server"
+  },
+  "hosting": {
+    "public": ".output/public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
     ]
   }
+}
